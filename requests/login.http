@@ -1,0 +1,9 @@
+POST http://localhost:1313/login
+Content-Type: application/json
+
+{
+  "email": "Gabi@gmail.com",
+  "password": "pwd"
+}
+
+###

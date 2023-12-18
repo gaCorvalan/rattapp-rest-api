@@ -1,0 +1,30 @@
+GET http://localhost:1313/users
+Content-Type: application/json
+
+###
+
+POST http://localhost:1313/users
+Content-Type: application/json
+
+{
+  "email": "Gabrielcn6@hotmail.com",
+  "password": "password",
+  "name": "Gabriel",
+  "surname": "Corvalan",
+  "workIncome": 10506050,
+  "otherIncome": {}
+}
+
+###
+GET http://localhost:1313/users/657fb3a94471811da5dff12e/cards
+Content-Type: application/json
+
+###
+
+POST http://localhost:1313/users/65807213b8108fe2abe50f14/cards
+Content-Type: application/json
+
+{
+  "description": "American Express",
+  "bank": "Santander Rio"
+}
