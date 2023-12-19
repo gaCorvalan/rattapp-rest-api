@@ -1,0 +1,18 @@
+GET http://localhost:1313/spendings/6580cc63f99c23c68644faf5
+Content-Type: application/json
+
+###
+ 
+POST http://localhost:1313/spendings/6580cc63f99c23c68644faf5
+Content-Type: application/json
+
+{
+  "description": "Carga Sube",
+  "amount": 1200,
+  "card": {
+    "_id": "6580d3848cae07c0699f92a5",
+    "description": "American Express",
+    "bank": "Banco Macro"
+  },
+  "date": "2023-12-18T22:59:30.834Z"
+}

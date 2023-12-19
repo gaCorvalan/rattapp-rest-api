@@ -7,7 +7,7 @@ POST http://localhost:1313/users
 Content-Type: application/json
 
 {
-  "email": "Gabrielcn6@hotmail.com",
+  "email": "Gabrielcn6@cmail.com",
   "password": "password",
   "name": "Gabriel",
   "surname": "Corvalan",
@@ -21,10 +21,10 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:1313/users/65807213b8108fe2abe50f14/cards
+POST http://localhost:1313/users/6580cc63f99c23c68644faf5/cards
 Content-Type: application/json
 
 {
   "description": "American Express",
-  "bank": "Santander Rio"
+  "bank": "Banco Macro"
 }

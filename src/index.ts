@@ -3,6 +3,7 @@ import usersRoutes from './routes/users'
 import dotenv from 'dotenv'
 import { connect } from 'mongoose'
 import loginRouter from './routes/login'
+import spendingsRouter from './routes/spendings'
 dotenv.config()
 
 const connectionString = `mongodb+srv://gabrielcorvalandev:${process.env.MONGO ?? ''}@freeappscluster.dzmrb4l.mongodb.net/rattapp`
@@ -26,8 +27,9 @@ app.get('/ping', (_req, res) => {
   res.send('<h1>Hello World<h1/>')
 })
 
-app.use('/users', usersRoutes)
 app.use('/login', loginRouter)
+app.use('/users', usersRoutes)
+app.use('/spendings', spendingsRouter)
 
 app.listen(port, () => {
   console.log(`[server]: Server is running at http://localhost:${port}`)
